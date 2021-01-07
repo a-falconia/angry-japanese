@@ -15,7 +15,7 @@
     <div class="container border border-warning d-flex flex-column justify-content-center align-items-center"
         style="height: 50vh;">
 
-        <div class="card border-dark" style="width: 16rem;">
+        <div id="flashcard" class="card border-dark" style="width: 16rem;">
             <div class="card-header">Flashcard #1</div>
             <div class="card-body text-dark">
                 <h5 class="card-title" id="kana">おはようございます</h5>
@@ -23,18 +23,19 @@
             </div>
         </div>
 
-        <form action="/nowhere">
+        <form id="ansForm" action="/nowhere">
             <div class="input-group mb-3" style="max-width: 18rem;">
-                <input type="text" class="form-control" placeholder="Answer" aria-label="Answer"
+                <input type="text" id="answer" class="form-control" placeholder="Answer" aria-label="Answer"
                     aria-describedby="basic-addon2">
                 <div class="input-group-append">
                     <button type="submit" class="btn btn-outline-secondary" type="button">Check</button>
                 </div>
             </div>
         </form>
-        <h5 class="text-center">Your Score: 1337</h5>
+
     </div>
-    <h5 class="text-center">Го учить слова!!</h5>
+    <h4 id="angryFeedback" class="text-center"> сейчас проверим, что ты вообще помнишь</h4>
+    <h5 id="score" class="text-center">Your Score: 0</h5>
 
     <script src="words.js"></script>
 </body>
