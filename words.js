@@ -22,6 +22,19 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+class Flashcard {
+    constructor(kana, romaji, english) {
+        this.kana = kana;
+        this.romaji = romaji;
+        this.english = english;
+    }
+    constructor(arr) {
+        this.kana = arr[0];
+        this.romaji = arr[1];
+        this.english = arr[2];
+    }
+
+}
 const getCard = function () {
 
     var randword = Math.floor(Math.random() * dict.length);
