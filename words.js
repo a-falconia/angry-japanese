@@ -23,11 +23,7 @@ function sleep(ms) {
 }
 
 class Flashcard {
-    constructor(kana, romaji, english) {
-        this.kana = kana;
-        this.romaji = romaji;
-        this.english = english;
-    }
+
     constructor(arr) {
         this.kana = arr[0];
         this.romaji = arr[1];
@@ -49,6 +45,7 @@ var points = 0;
 
 ansForm.addEventListener('submit', async (e) => {
     e.preventDefault();
+
     if (answer.value == ans) {
 
         points += 10;
