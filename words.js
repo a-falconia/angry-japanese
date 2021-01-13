@@ -10,12 +10,12 @@ class Flashcard {
 }
 
 var dict = [
-    // new Flashcard(["おはようございます", "Ohayou gozaimasu", "good morning"]),
-    // new Flashcard(["こんばんは", "Konbanwa", "good evening"]),
-    // new Flashcard(["こんにちは", "Konnichiwa", "hello"]),
-    // new Flashcard(["おやすみなさい", "Oyasuminasai", "goodnight"]),
-    // new Flashcard(["ありがとうございます", "Arigatou gozaimasu", "thank you"]),
-    // new Flashcard(["すみません", "Sumimasen", "sorry"]),
+    new Flashcard(["おはようございます", "Ohayou gozaimasu", "good morning"]),
+    new Flashcard(["こんばんは", "Konbanwa", "good evening"]),
+    new Flashcard(["こんにちは", "Konnichiwa", "hello"]),
+    new Flashcard(["おやすみなさい", "Oyasuminasai", "goodnight"]),
+    new Flashcard(["ありがとうございます", "Arigatou gozaimasu", "thank you"]),
+    new Flashcard(["すみません", "Sumimasen", "sorry"]),
     new Flashcard(["ごめんなさい", "Gomennasai", "sorry"]),
     new Flashcard(["はい", "Hai", "yes"]),
     new Flashcard(["いいえ", "iie", "no"]),
@@ -47,7 +47,7 @@ var points = 0;
 ansForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    if (answer.value == flashcard.english) {
+    if (answer.value.toLowerCase() == flashcard.english) {
 
         points += 10;
         await sleep(500);
@@ -60,7 +60,7 @@ ansForm.addEventListener('submit', async (e) => {
 
         points = 0;
         await sleep(500);
-        feedback.textContent = "Wrong, you idiot";
+        feedback.textContent = `Wrong, you idiot. Correct Answer: ${flashcard.english}`;
         feedback.style.color = 'red';
         console.log(dict);
     }
