@@ -1,0 +1,15 @@
+{
+    "setname":"basic",
+    "flashcards": [
+
+        {"kana":"おはようございます", "romaji":"Ohayou gozaimasu", "english":"good morning"},
+        {"kana":"こんばんは", "romaji":"Konbanwa", "english":"good evening"},
+        {"kana":"こんにちは", "romaji":"Konnichiwa", "english":"hello"},
+        {"kana":"おやすみなさい", "romaji":"Oyasuminasai", "english":"goodnight"},
+        {"kana":"ありがとうございます", "romaji":"Arigatou gozaimasu", "english":"thank you"},
+        {"kana":"すみません", "romaji":"Sumimasen", "english":"sorry"},
+        {"kana":"ごめんなさい", "romaji":"Gomennasai", "english":"sorry"},
+        {"kana":"はい", "romaji":"Hai", "english":"yes"},
+        {"kana":"いいえ", "romaji":"iie", "english":"no"}
+    ]
+}
