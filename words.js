@@ -1,4 +1,3 @@
-
 class Flashcard {
 
     constructor(arr) {
@@ -6,7 +5,6 @@ class Flashcard {
         this.romaji = arr[1];
         this.english = arr[2];
     }
-
 }
 
 var dict = [

@@ -1,5 +1,5 @@
 {
-    "setname":"basic",
+    "name":"basic",
     "flashcards": [
 
         {"kana":"おはようございます", "romaji":"Ohayou gozaimasu", "english":"good morning"},
