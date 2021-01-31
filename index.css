@@ -6,3 +6,10 @@
 --wintergreen-dream: #5F8178;
 --fire-opal: #ED5C5A;
 }
+
+#mainContent {
+    background-image: url('./1-unsplash.jpg');
+    background-size: cover;
+    filter: blur(3px);
+   -webkit-filter: blur(3px);
+  }
